@@ -55,6 +55,58 @@ main section p b{
     color: #457b9d;
 }
 
+.habilidades{
+    background-color: transparent;
+    border: 3px solid #457b9d;
+}
+
+
+/* proyecto-slider */
+
+.proyecto-slider{
+    width: 90%;
+    max-width: 120em;
+    background-color: lightblue;
+}
+
+.proyecto-slider .slide-track{
+    width: 200%;
+    background-color: orange;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    transition: all .5s ease;
+    transform: translateX(-50%);
+}
+
+.proyecto-slider .img{
+    width: calc(100%/2);
+    background-color: lime;
+}
+
+.proyecto-slider .puntos{
+    width: 100%;
+    background-color: red;
+    padding: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto-slider .punto{
+    width: 2em;
+    height: 2em;
+    background-color: blue;
+    margin: 1em;
+}
+
+.proyecto-slider .punto.activo{
+    background-color: orange;
+}
+
 footer {
     width: 100%;
     text-align: center;
