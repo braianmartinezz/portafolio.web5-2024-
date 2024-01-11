@@ -55,56 +55,84 @@ main section p b{
     color: #457b9d;
 }
 
-.habilidades{
-    background-color: transparent;
-    border: 3px solid #457b9d;
+main section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
 }
 
+.habilidades{
+    width: 100%;
+  height: auto;
+
+}
 
 /* proyecto-slider */
 
-.proyecto-slider{
+.carrousel {
     width: 90%;
-    max-width: 120em;
-    background-color: lightblue;
+    max-width: 50em;
+    padding: 2em;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    overflow: hidden;
+    margin: 0 auto;
 }
-
-.proyecto-slider .slide-track{
+  
+  .carrousel .grande {
     width: 200%;
-    background-color: orange;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-
-    transition: all .5s ease;
-    transform: translateX(-50%);
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    padding: 2em;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
 }
-
-.proyecto-slider .img{
-    width: calc(100%/2);
-    background-color: lime;
+  
+  .carrousel .img {
+    width: calc( 100% / 2 - 2em);
+    min-height: 10vh;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
-
-.proyecto-slider .puntos{
+  
+  .carrousel .puntos {
     width: 100%;
-    background-color: red;
-    padding: 1em;
+    margin: 1em 0 0;
+    padding: 0.4em;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    color: transparent;
 }
-
-.proyecto-slider .punto{
+  
+  .carrousel .punto {
     width: 2em;
     height: 2em;
-    background-color: blue;
-    margin: 1em;
+    margin: 1em 1em 0;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    border: 2px solid #457b9d;
 }
-
-.proyecto-slider .punto.activo{
-    background-color: orange;
+  
+  .carrousel .punto.activo {
+    background-color: #457b9d;
 }
 
 footer {
