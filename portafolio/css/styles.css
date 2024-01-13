@@ -4,6 +4,12 @@ body {
     background-color: #1d3557;
 }
 
+.tituloConoceme{
+    color: #457b9d;
+    text-align: center;
+    font-size: 30px;
+}
+
 header {
     background-color: #f1faee;
     display: flex;
@@ -17,6 +23,11 @@ header {
     opacity: 85%;
 }
 
+nav ul a:hover{
+    background-color: #457b9d;
+    transition: background-color 0.5s ease;
+}
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -27,6 +38,7 @@ nav ul a {
     margin: 1rem;
     text-decoration: none;
     color: black;
+    border-radius: 50px;
 }
 
 main {
@@ -51,6 +63,10 @@ img{
     object-fit: contain; 
 }
 
+img:hover{
+    opacity: 50%;
+}
+
 main section p b{
     color: #457b9d;
 }
@@ -61,6 +77,12 @@ main section{
     gap: 10px;
 }
 
+.tituloHabilidades{
+    color: #457b9d;
+    text-align: center;
+    font-size: 30px;
+}
+
 .habilidades{
     width: 100%;
   height: auto;
@@ -68,6 +90,11 @@ main section{
 }
 
 /* proyecto-slider */
+.tituloProyectos{
+    color: #457b9d;
+    text-align: center;
+    font-size: 30px;
+}
 
 .carrousel {
     width: 90%;
