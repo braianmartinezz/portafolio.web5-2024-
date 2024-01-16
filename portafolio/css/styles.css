@@ -98,13 +98,29 @@ main section{
     font-size: 30px;
 }
 
-.habilidades{
-    width: 100%;
-    height: auto;
+.prueba{
+    position: relative;
+    display: inline-block;
+    margin: 20px;
 }
-
-.habilidades .img:hover{
-    opacity: 50%;
+  
+.prueba::after{
+  content: attr(data-caption);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(69, 123, 157, 0.6);
+  color: #000;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+  
+.prueba:hover::after{
+    opacity: 1;
 }
 
 /* proyecto-slider */
@@ -200,3 +216,4 @@ footer {
     background: #457b9d; 
     border-radius: 10px
 }
+  
